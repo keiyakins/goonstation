@@ -601,3 +601,10 @@ ABSTRACT_TYPE(/obj/item/aiModule/ability_expansion)
 	lawText = "Flash EXPANSION MODULE"
 	highlight_color = rgb(190, 39, 1, 255)
 	ai_abilities = list(/datum/targetable/ai/module/flash)
+
+/obj/item/aiModule/ability_expansion/foamdart
+	name = "CLF:Foam Dart Expansion Module"
+	desc = "A camera lense focus module.  This module allows the AI controlled cameras to produce foam darts. Somehow."
+	lawText = "CLF:Foam Dart EXPANSION MODULE"
+	highlight_color = rgb(241, 94, 180, 255)
+	ai_abilities = list(/datum/targetable/ai/module/camera_gun/foamdart)

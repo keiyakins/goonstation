@@ -233,6 +233,14 @@
 	icon_state = "camera_laser"
 	P = /datum/projectile/laser/light/tracer
 
+/datum/targetable/ai/module/camera_gun/foamdart
+	name = "Camera Foam Dart Gun"
+	icon_state = "camera_foamdart"
+	projectile_cd = 3 SECONDS // foam darts are harmless, let the AI plink away
+	charge_time = 0.2 SECONDS // again, harmless.
+	charge_color = rgb(136, 55, 198) // the green is too close to the taser.
+	P = /datum/projectile/bullet/foamdart/biodegradable
+
 
 
 /datum/targetable/ai/module/teleport
