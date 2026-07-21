@@ -241,6 +241,11 @@
 	charge_color = rgb(136, 55, 198) // the green is too close to the taser.
 	P = /datum/projectile/bullet/foamdart/biodegradable
 
+/datum/targetable/ai/module/camera_gun/paintball
+	name = "Camera Paintball Marker"
+	icon_state = "camera_paintball"
+	P = /datum/projectile/bullet/marker/ai
+	charge_color = rgb(217, 150, 0)
 
 
 /datum/targetable/ai/module/teleport

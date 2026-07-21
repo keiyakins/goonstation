@@ -1759,6 +1759,9 @@ datum/projectile/bullet/autocannon
 		..()
 		hit.setStatus("marker_painted", 30 SECONDS)
 
+/datum/projectile/bullet/marker/ai
+	damage = 0 // no human harm!
+
 /datum/projectile/bullet/pbr //direct less-lethal 40mm option
 	name = "plastic baton round"
 	icon_state = "40mm_nonlethal"
