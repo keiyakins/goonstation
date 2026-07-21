@@ -37,6 +37,7 @@
 			/datum/commodity/trader/pianzi/medicine,
 			/datum/commodity/trader/pianzi/recdrugs,
 			/datum/commodity/trader/pianzi/wine,
+			/datum/commodity/trader/pianzi/ai_gun,
 		),
 		TRADER_RARITY_RARE = list()
 	)
@@ -172,6 +173,16 @@
 	alt_type_chance = 75
 	possible_names = list("Love growing unusual plants? Then these seeds are for you, my good friend!",
 	"Your botanists will love the opportunity to grow these very strange and unusual plant seeds!")
+
+/datum/commodity/trader/pianzi/ai_gun
+	comname = "Security Camera Projectile Module"
+	comtype = /obj/item/aiModule/ability_expansion/foamdart
+	amount = 1
+	price_boundary = list(PAY::EXECUTIVE,PAY::EMBEZZLED)
+	possible_alt_types = list(/obj/item/aiModule/ability_expansion/paintball)
+	alt_type_chance = 16 // roughly one in six
+	possible_names = list("Having security problems? This module will upgrade your security system to fire projectiles!",
+	"Your AI will love this upgrade letting it take action against threats it sees on camera!")
 
 // Pianzi wants these things
 
